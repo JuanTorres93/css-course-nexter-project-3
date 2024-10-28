@@ -1,7 +1,12 @@
 @use "base" as *;
 
 .features {
-    background-color: $color-grey-light-2;
-
     grid-column: center-start / center-end;
+    margin: 15rem 0;
+
+    // TODO Research about subgrids. A the time of the course, subgrids were not implemented.
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // DOC this grid works only with implicit rows
+    grid-gap: 6rem;
 }
